@@ -154,10 +154,6 @@ def extract_keyframes(
         cost_sonnet = total_tokens * 3 / 1_000_000
         cost_haiku = total_tokens * 1 / 1_000_000
 
-        # JPY conversion (rate: 150 JPY/USD)
-        usd_to_jpy = 150
-        cost_haiku_jpy = cost_haiku * usd_to_jpy
-
         return {
             "video_path": str(video_path),
             "output_dir": str(output_path),
@@ -172,7 +168,6 @@ def extract_keyframes(
             "cost_usd_opus": round(cost_opus, 3),
             "cost_usd_sonnet": round(cost_sonnet, 3),
             "cost_usd_haiku": round(cost_haiku, 4),
-            "cost_jpy_haiku": round(cost_haiku_jpy, 2),
             "files": saved_files,
             "settings": {
                 "similarity_threshold": similarity_threshold,
