@@ -56,6 +56,7 @@ Output example (JSON):
   "cost_usd_opus": 0.156,
   "cost_usd_sonnet": 0.031,
   "cost_usd_haiku": 0.0104,
+  "cost_jpy_haiku": 1.56,
   "files": ["/.../key_0001.jpg", ...]
 }
 ```
@@ -69,7 +70,7 @@ Keyframe extraction complete:
 - Frames extracted: {keyframe_count}
 - Image size: {image_size}
 - Estimated tokens: {total_tokens}
-- Cost estimate: Haiku ${cost_usd_haiku} / Sonnet ${cost_usd_sonnet} / Opus ${cost_usd_opus}
+- Cost estimate: Haiku ${cost_usd_haiku} (~{cost_jpy_haiku} JPY) / Sonnet ${cost_usd_sonnet} / Opus ${cost_usd_opus}
 
 Proceed with frame analysis?
 ```
